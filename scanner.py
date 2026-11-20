@@ -4,10 +4,10 @@ import urllib.request
 import urllib.error
 from urllib.parse import urlparse
 
-SECURITY_HEADERS = [('Strict-Transport-Security', 'Obriga a utilizacao de ligacoes encriptadas HTTPS (HSTS).'), ('Content-Security-Policy', 'Mitiga ataques de injecao de scripts e XSS.'), ('X-Frame-Options', 'Previne ataques de clickjacking controlando a integracao em frames.'), ('X-Content-Type-Options', 'Impede o browser de executar MIME-sniffing em ficheiros recebidos.'), ('Referrer-Policy', 'Restringe a fuga de parametros sensiveis de URLs entre origens.'), ('Permissions-Policy', 'Bloqueia o acesso indevido a microfone, camara e geolocalizacao.')]
+SECURITY_HEADERS = [('Strict-Transport-Security', 'Obriga à utilização de ligações encriptadas HTTPS e impede ataques de downgrade e interceção SSL.'), ('Content-Security-Policy', 'Mitiga ataques de injeção de scripts (XSS) e restringe as origens autorizadas para carregamento de recursos.'), ('X-Frame-Options', 'Previne ataques de clickjacking regulando as permissões de incorporação em frames e iframes.'), ('X-Content-Type-Options', 'Impede a execução indevida de ficheiros derivados de vulnerabilidades de MIME-sniffing.'), ('Referrer-Policy', 'Protege dados sensíveis contidos em URLs de referência contra fuga para domínios terceiros.'), ('Permissions-Policy', 'Aplica o princípio do menor privilégio sobre APIs de hardware do navegador (câmara, microfone e geolocalização).')]
 
 def scan_target(target_url):
-    print(f"\n[TAVARDT Portugal] A iniciar auditoria perimetral de cabecalhos de seguranca para: {target_url}\n")
+    print(f"\n[TAVARDT Portugal] A iniciar auditoria perimetral de cabeçalhos de segurança para: {target_url}\n")
     try:
         req = urllib.request.Request(
             target_url,
@@ -27,8 +27,8 @@ def scan_target(target_url):
                 else:
                     print(f"  [AUSENTE] {header_name}: {desc}")
                     
-            print(f"\n[TAVARDT Portugal] Pontuacao Final: {score}/{total}")
-            print(f"\nVerificacao completa online: https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/")
+            print(f"\n[TAVARDT Portugal] Pontuação Final: {score}/{total}")
+            print(f"\nVerificação completa online: https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/")
             print(f"Suporte corporativo e ciberdefesa: https://ag.tavardt.com/pt/ciberseguranca/\n")
             
     except urllib.error.URLError as e:
