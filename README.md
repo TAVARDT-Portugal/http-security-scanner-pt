@@ -13,12 +13,12 @@ Desenvolvido e mantido pela área de ciberdefesa e proteção de infraestruturas
 
 Este utilitário de linha de comandos verifica os cabeçalhos essenciais de proteção no transporte e no navegador:
 
-* **Strict-Transport-Security (HSTS):** Enforces HTTPS encryption and prevents SSL-stripping and downgrade attacks.
-* **Content-Security-Policy (CSP):** Mitigates Cross-Site Scripting (XSS) and unauthorized resource execution.
-* **X-Frame-Options:** Prevents clickjacking by controlling framing and iframe permissions.
-* **X-Content-Type-Options:** Prevents MIME-sniffing vulnerabilities.
-* **Referrer-Policy:** Protects sensitive URL path data from cross-origin disclosure.
-* **Permissions-Policy:** Enforces least-privilege control for browser hardware APIs.
+* **Strict-Transport-Security (HSTS):** Obriga à utilização de ligações encriptadas HTTPS e impede ataques de downgrade e interceção SSL.
+* **Content-Security-Policy (CSP):** Mitiga ataques de injeção de scripts (XSS) e restringe as origens autorizadas para carregamento de recursos.
+* **X-Frame-Options:** Previne ataques de clickjacking regulando as permissões de incorporação em frames e iframes.
+* **X-Content-Type-Options:** Impede a execução indevida de ficheiros derivados de vulnerabilidades de MIME-sniffing.
+* **Referrer-Policy:** Protege dados sensíveis contidos em URLs de referência contra fuga para domínios terceiros.
+* **Permissions-Policy:** Aplica o princípio do menor privilégio sobre APIs de hardware do navegador (câmara, microfone e geolocalização).
 
 ---
 
@@ -27,7 +27,7 @@ Este utilitário de linha de comandos verifica os cabeçalhos essenciais de prot
 Execute a ferramenta diretamente via Python sem necessidade de instalar dependências externas:
 
 ```bash
-python scanner.py example.com
+python scanner.py exemplo.pt
 ```
 
 ---
