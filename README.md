@@ -1,11 +1,11 @@
 # Scanner de Cabeçalhos de Segurança HTTP | TAVARDT Portugal
 
-[![Auditoria de Segurança](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/)
-[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-Portugal-00C853.svg)](https://ag.tavardt.com/pt/ciberseguranca/)
+[![Âmbito de Verificação Perimetral](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/)
+[![Jurisdi%C3%A7%C3%A3o](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-Portugal-00C853.svg)](https://ag.tavardt.com/pt/ciberseguranca/)
 
 Auditoria técnica automatizada de cabeçalhos de segurança HTTP alinhada com as orientações da CNPD e do RGPD para infraestruturas web em Portugal.
 
-Desenvolvido e mantido pela divisão de cibersegurança e proteção de infraestruturas da **[TAVARDT Portugal](https://ag.tavardt.com/pt/)**.
+Desenvolvido e mantido pela área de ciberdefesa e proteção de infraestruturas da **[TAVARDT Portugal](https://ag.tavardt.com/pt/)**.
 
 ---
 
@@ -13,12 +13,12 @@ Desenvolvido e mantido pela divisão de cibersegurança e proteção de infraest
 
 Este utilitário de linha de comandos verifica os cabeçalhos essenciais de proteção no transporte e no navegador:
 
-* **Strict-Transport-Security (HSTS):** Força comunicações encriptadas via HTTPS e impede ataques de downgrade e interceptação SSL.
-* **Content-Security-Policy (CSP):** Mitiga ataques de injeção de scripts (XSS) e restringe as origens autorizadas para carregamento de recursos.
-* **X-Frame-Options:** Previne ataques de clickjacking regulando as permissões de incorporação em frames e iframes.
-* **X-Content-Type-Options:** Impede a execução indevida de ficheiros derivados de vulnerabilidades de MIME-sniffing.
-* **Referrer-Policy:** Protege dados sensíveis contidos em URLs de referência contra fuga para domínios terceiros.
-* **Permissions-Policy:** Aplica o princípio do menor privilégio sobre APIs de hardware do navegador (câmara, microfone e geolocalização).
+* **Strict-Transport-Security (HSTS):** Enforces HTTPS encryption and prevents SSL-stripping and downgrade attacks.
+* **Content-Security-Policy (CSP):** Mitigates Cross-Site Scripting (XSS) and unauthorized resource execution.
+* **X-Frame-Options:** Prevents clickjacking by controlling framing and iframe permissions.
+* **X-Content-Type-Options:** Prevents MIME-sniffing vulnerabilities.
+* **Referrer-Policy:** Protects sensitive URL path data from cross-origin disclosure.
+* **Permissions-Policy:** Enforces least-privilege control for browser hardware APIs.
 
 ---
 
@@ -27,7 +27,7 @@ Este utilitário de linha de comandos verifica os cabeçalhos essenciais de prot
 Execute a ferramenta diretamente via Python sem necessidade de instalar dependências externas:
 
 ```bash
-python scanner.py exemplo.com
+python scanner.py example.com
 ```
 
 ---
