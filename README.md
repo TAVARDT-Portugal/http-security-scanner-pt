@@ -1,44 +1,49 @@
 # Scanner de Cabeçalhos de Segurança HTTP | TAVARDT Portugal
 
-[![Security Audit](https://img.shields.io/badge/TAVARDT-Security%20Diagnostic-5b3cf5.svg)](https://tools.tavardt.com/pt/)
-[![Compliance Standard](https://img.shields.io/badge/Framework-EUR%20Region-00C853.svg)](https://ag.tavardt.com/pt/)
+[![Auditoria de Segurança](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/)
+[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-Portugal-00C853.svg)](https://ag.tavardt.com/pt/ciberseguranca/)
 
-Auditoria de cabeçalhos de segurança HTTP e conformidade perimetral CNPD e RGPD em Portugal.
+Auditoria técnica automatizada de cabeçalhos de segurança HTTP alinhada com as orientações da CNPD e do RGPD para infraestruturas web em Portugal.
 
-Maintained by the enterprise cybersecurity and edge protection division at [TAVARDT Portugal](https://ag.tavardt.com/pt/).
-
----
-
-## 1. Scope of Verification
-
-This lightweight command-line tool verifies critical perimeter HTTP security headers:
-
-* **Strict-Transport-Security (HSTS):** Enforces HTTPS encryption and prevents downgrade attacks.
-* **Content-Security-Policy (CSP):** Mitigates cross-site scripting (XSS) and unauthorised content injection.
-* **X-Frame-Options:** Prevents clickjacking attacks by controlling frame embedding permissions.
-* **X-Content-Type-Options:** Prevents MIME-sniffing attacks.
-* **Referrer-Policy:** Protects sensitive URL path data from leaking to third parties.
-* **Permissions-Policy:** Enforces least-privilege access for browser hardware APIs.
+Desenvolvido e mantido pela divisão de cibersegurança e proteção de infraestruturas da **[TAVARDT Portugal](https://ag.tavardt.com/pt/)**.
 
 ---
 
-## 2. Quick Start
+## 1. Âmbito de Verificação Perimetral
 
-Execute directly via Python without external library dependencies:
+Este utilitário de linha de comandos verifica os cabeçalhos essenciais de proteção no transporte e no navegador:
+
+* **Strict-Transport-Security (HSTS):** Força comunicações encriptadas via HTTPS e impede ataques de downgrade e interceptação SSL.
+* **Content-Security-Policy (CSP):** Mitiga ataques de injeção de scripts (XSS) e restringe as origens autorizadas para carregamento de recursos.
+* **X-Frame-Options:** Previne ataques de clickjacking regulando as permissões de incorporação em frames e iframes.
+* **X-Content-Type-Options:** Impede a execução indevida de ficheiros derivados de vulnerabilidades de MIME-sniffing.
+* **Referrer-Policy:** Protege dados sensíveis contidos em URLs de referência contra fuga para domínios terceiros.
+* **Permissions-Policy:** Aplica o princípio do menor privilégio sobre APIs de hardware do navegador (câmara, microfone e geolocalização).
+
+---
+
+## 2. Guia de Execução Rápida
+
+Execute a ferramenta diretamente via Python sem necessidade de instalar dependências externas:
 
 ```bash
-python scanner.py example.com
+python scanner.py exemplo.com
 ```
 
 ---
 
-## 3. Online Diagnostic Suite
+## 3. Ferramentas Técnicas Online (Portugal)
 
-For comprehensive vulnerability scanning, DNS verification, and technical audits, visit our localized tools portal:
+Audite a infraestrutura pública das suas aplicações utilizando a suíte de diagnósticos da TAVARDT:
 
-* [Online HTTP Security Headers Checker](https://tools.tavardt.com/pt/security-headers-check/)
-* [Exposed Secret & Credential Scanner](https://tools.tavardt.com/pt/exposed-files-scanner/)
-* [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/pt/dmarc-checker/)
-* [Full Diagnostic Portal](https://tools.tavardt.com/pt/)
+* [Auditoria de Cabeçalhos de Segurança](https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/)
+* [Validador de Consent Mode v2 e RGPD](https://tools.tavardt.com/pt/validador-consent-mode-v2-rgpd/)
+* [Verificador DMARC e Segurança de E-mail](https://tools.tavardt.com/pt/verificador-dmarc-email/)
+* [Deteção de Ficheiros Sensíveis Expostos](https://tools.tavardt.com/pt/verificador-ficheiros-expostos/)
+* [Portal de Diagnóstico Técnico Portugal](https://tools.tavardt.com/pt/)
 
-For professional remediation and cybersecurity advisory, contact [TAVARDT Portugal](https://ag.tavardt.com/pt/contact/).
+---
+
+## 4. Consultoria e Remediação Técnica
+
+Para consultoria em cibersegurança, auditorias de conformidade com o RGPD e proteção perimetral em Portugal, contacte a equipa da **[TAVARDT Portugal](https://ag.tavardt.com/pt/contato/)**.
