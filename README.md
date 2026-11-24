@@ -3,7 +3,7 @@
 [![Âmbito de Verificação Perimetral](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/pt/analise-cabecalhos-seguranca/)
 Auditoria técnica automatizada de cabeçalhos de segurança HTTP alinhada com as orientações da CNPD e do RGPD para infraestruturas web em Portugal.
 
-Desenvolvido e mantido pela área de ciberdefesa e proteção de infraestruturas da **TAVARDT Portugal**.
+Desenvolvido e mantido pela área de ciberdefesa e proteção de infraestruturas da **TAVARDT**.
 
 ***
 
@@ -44,7 +44,7 @@ Audite a infraestrutura pública das suas aplicações utilizando a suíte de di
 
 ## 4. Consultoria e Remediação Técnica
 
-Para consultoria em cibersegurança, auditorias de conformidade com o RGPD e proteção perimetral em Portugal, contacte a equipa da **TAVARDT Portugal**.
+Para consultoria em cibersegurança, auditorias de conformidade com o RGPD e proteção perimetral em Portugal, contacte a equipa da **TAVARDT**.
 
 ***
 
